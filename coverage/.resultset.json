@@ -282,7 +282,8 @@
       "/Users/derekborski/turing/2module/challenges/make_it_work/app/models/contestant_project.rb": {
         "lines": [
           1,
-          null,
+          1,
+          1,
           null
         ]
       },
@@ -308,6 +309,8 @@
       },
       "/Users/derekborski/turing/2module/challenges/make_it_work/app/models/contestant.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           null
@@ -337,10 +340,12 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1589723481
+    "timestamp": 1589725485
   }
 }
