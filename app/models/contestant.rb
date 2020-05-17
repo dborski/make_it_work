@@ -5,5 +5,9 @@ class Contestant <ApplicationRecord
 
   def self.count_of_contestants
     Contestant.count
+  end
+  
+  def self.average_years_of_experience
+    Contestant.average(:years_of_experience)
   end 
 end

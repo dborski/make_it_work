@@ -35,5 +35,21 @@ RSpec.describe "Project show page" do
       expect(boardfit.contestants.count_of_contestants).to eq(2)
       expect(page).to have_content(boardfit.contestants.count_of_contestants)
     end 
+
+    it "Shows the average years of experience for the contestants that worked on the project" do
+
+      recycled_material_challenge = Challenge.create(theme: "Recycled Material", project_budget: 1000)
+      boardfit = recycled_material_challenge.projects.create(name: "Boardfit", material: "Cardboard Boxes")
+
+      jay = Contestant.create(name: "Jay McCarroll", age: 40, hometown: "LA", years_of_experience: 13)
+      gretchen = Contestant.create(name: "Gretchen Jones", age: 36, hometown: "NYC", years_of_experience: 12)
+
+      ContestantProject.create(contestant_id: jay.id, project_id: boardfit.id)
+      ContestantProject.create(contestant_id: gretchen.id, project_id: boardfit.id)
+
+      visit "/projects/#{boardfit.id}"
+
+      expect(page).to have_content(boardfit.contestants.average_years_of_experience.round(2))
+    end 
   end
 end

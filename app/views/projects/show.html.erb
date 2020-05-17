@@ -5,3 +5,7 @@
 <p>Challenge Theme: <%= @project.challenge.theme %></p>
 
 <p>Number of Contestants: <%= @project.contestants.count_of_contestants %></p>
+
+<% if !@project.contestants.empty? %>
+  <p>Average Contestant Experience: <%= @project.contestants.average_years_of_experience.round(2) %></p>
+<% end %>
