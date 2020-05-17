@@ -244,6 +244,7 @@
           null,
           null,
           1,
+          1,
           null
         ]
       },
@@ -389,12 +390,13 @@
           null
         ]
       },
-      "/Users/derekborski/turing/2module/challenges/make_it_work/app/controllers/projects_controller.rb": {
+      "/Users/derekborski/turing/2module/challenges/make_it_work/app/controllers/contestants_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
+          2,
+          null,
           null,
           null
         ]
@@ -404,8 +406,18 @@
           1,
           null
         ]
+      },
+      "/Users/derekborski/turing/2module/challenges/make_it_work/app/controllers/projects_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1589727621
+    "timestamp": 1589728652
   }
 }
